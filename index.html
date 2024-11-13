@@ -17,12 +17,12 @@
         }
 
         .Virsraksts {
-            font-size: 4rem;
+            font-size: 40px;
             text-align: center;
             background-color: #658C95;
             color: #fff;
             padding: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 90%;
@@ -74,17 +74,102 @@
             justify-items: center;
             width: 100%;
         }
+        .container {
+            background: #e1f1ff;
+            justify-items: center;
+            width: 100%;
+            padding: 20px;
+            
+        }
+        li {
+            font-size: 22px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+        }
+        @media (max-width: 768px){
+            .paragrafs {
+                font-size: 18px;
+                text-align: center;
+                line-height: 1.6;
+                width: 90%;
+                max-width: 800px;
+                margin: 0 auto 20px;
+            }
+
+            li {
+            font-size: 18px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            }
+            
+            .Virsraksts {
+            font-size: 40px;
+            text-align: center;
+            background-color: #658C95;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            }
+
+            .Virsraksts_m {
+                font-size: 25px;
+                text-align: center;
+                background-color: lightskyblue;
+                color: #333;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 700px;
+            }
+            .Virsraksts_m2 {
+                font-size: 19px;
+                text-align: center;
+                background-color: lightblue;
+                color: #333;
+                padding: 10px;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                width: 80%;
+                max-width: 600px;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="Virsraksts">Portfolio</h1>
-    </div>
-    <div class="container">
-        <h1 class="Virsraksts_m">Par mani</h1>
-        <p class="paragrafs">Mani sauc Krists Kārlis Grundmanis man ir pilni 17 gadi. Mācos Vidzemes Tehnoloģiju un Dizaina tehnikumā. Profesija - Programmēšanas tehniķis.</p>
-        <h1 class="Virsraksts_m2">Hobiji</h1>
-        <p class="paragrafs">Mani hobiji ir Makškerēšana un brīvajā laikā pastaigāties pa vietām kur nekad neesmu bijis vai braukt ar riteni.</p>
+    <div class="container2">
+        <div class="container">
+            <h1 class="Virsraksts">Portfolio</h1>
+        </div>
+        <div class="container">
+            <h1 class="Virsraksts_m">Par mani</h1>
+            <p class="paragrafs">Mani sauc Krists Kārlis Grundmanis man ir pilni 17 gadi. 
+                Mācos Vidzemes Tehnoloģiju un Dizaina tehnikumā. Profesija - Programmēšanas tehniķis.</p>
+            <h1 class="Virsraksts_m2">Hobiji</h1>
+            <p class="paragrafs">Mani hobiji ir Makškerēšana un brīvajā laikā pastaigāties pa vietām kur nekad neesmu bijis vai braukt ar riteni.</p>
+        </div>
+        <div class="container">
+            <h1 class="Virsraksts_m">Programmēšanas pašreizējā gaita</h1>
+            <p class="paragrafs">Pašlaik teikšu godīgi man liekas kad manas zināšanas visā programmēšanā 
+                ir ļoti zemas un vēlos tāpēc iegūt jaunas un vairāk zināšanas par to.</p> 
+            <h1 class="Virsraksts_m2">Kādas valodas es tagad zinu?</h1>
+            <li>Lua</li>
+            <li>HTML + CSS + JS + PHP</li>
+            <li>Python (Ļoti mazliet pateicoties tam kad Lua ir gandrīz tas pats kas Python)</li>
+            <h1 class="Virsraksts_m2">Ko es vēl vēlos iemācīties</h1>
+            <p class="paragrafs">Es vēlos protams attīstīt vairāk savas zināšanas programmēšanā.
+                Iemācīties vairāk valodas un iegūt vairāk zināšanas par datubāzēm kas man ir nepieciešamas, saviem privātajiem projektiem.
+            </p>
+        </div>
     </div>
 </body>
 </html>
