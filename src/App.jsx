@@ -14,9 +14,9 @@ function App() {
       <Navbar email={profile.email} />
       <main>
         <Hero profile={profile} />
-        <Projects projects={profile.projects} />
         <About profile={profile} />
         <Skills skills={profile.skills} />
+        <Projects projects={profile.projects} />
         <Contact profile={profile} />
       </main>
       <Footer profile={profile} />

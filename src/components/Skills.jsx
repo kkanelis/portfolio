@@ -6,7 +6,7 @@ export default function Skills({ skills }) {
       <div className="container">
         <div className="section__head">
           <span className="section__index">02</span>
-          <h2 className="section__title">Skills & tools</h2>
+          <h2 className="section__title">Prasmes</h2>
           <span className="section__line" aria-hidden="true" />
         </div>
 

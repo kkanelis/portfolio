@@ -24,42 +24,42 @@ export const profile = {
   },
   projects: [
     {
-      title: 'Pulseboard',
+      title: 'Radu Burziņš',
       description:
-        'Real-time analytics dashboard for dev teams. Streams events over WebSockets and renders custom charts at 60fps.',
-      tech: ['React', 'Go', 'WebSockets'],
-      accent: '#ff4d00',
+        'Vietne kur radi var satikties digitāli un plānot savus pasākumus.',
+      tech: ['React', 'Laravel', 'Tailwind CSS', 'REST API', 'Filament', 'Javascript', 'MySQL'],
+      accent: '#474448',
+      links: {},
+    },
+    {
+      title: 'Mystery Meal',
+      description:
+        'Atrodi sev vakariņas, borkastis, pusdienas no tā kas tev ir ledusskapī.',
+      tech: ['Laravel', 'Tailwind CSS'],
+      accent: '#725ed3',
       links: { demo: '#', code: '#' },
     },
     {
-      title: 'Snapnote',
+      title: 'Flight Radar',
       description:
-        'Offline-first note-taking app with end-to-end encryption and instant search across thousands of documents.',
-      tech: ['TypeScript', 'React', 'IndexedDB'],
-      accent: '#ffc700',
-      links: { demo: '#', code: '#' },
-    },
-    {
-      title: 'Greenlist',
-      description:
-        'A carbon-footprint tracker that turns everyday habits into a game. Used daily by 10k+ eco-conscious users.',
-      tech: ['Next.js', 'PostgreSQL', 'Tailwind'],
+        'Apsakti kādas lidmašīnas tev lido virs galvas.',
+      tech: ['Laravel', 'REST API'],
       accent: '#7bc950',
       links: { demo: '#', code: '#' },
     },
     {
-      title: 'Formless',
+      title: 'Drīz beigsies!',
       description:
-        'Headless form infrastructure that validates, transforms, and routes submissions with zero boilerplate.',
-      tech: ['Node.js', 'GraphQL', 'Redis'],
+        'Liec sev atcerēties kad tev kaut kas beigsies, piemēram netflixa abonoments.',
+      tech: ['Laravel', 'MySQL'],
       accent: '#ff8c42',
       links: { demo: '#', code: '#' },
     },
     {
-      title: 'Kite',
+      title: 'IT Help',
       description:
-        'A lightweight design-system engine that generates themed, accessible components straight from JSON tokens.',
-      tech: ['React', 'TypeScript', 'WCAG'],
+        'Jautā palīdzību tehnisko kādā skolā vai uzņēmumā, lai tev varētu palīdzēt kāds IT speciālists.',
+      tech: ['React', 'Laravel', 'MySQL'],
       accent: '#4d9de0',
       links: { demo: '#', code: '#' },
     },

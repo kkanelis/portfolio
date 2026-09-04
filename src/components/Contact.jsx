@@ -19,7 +19,7 @@ export default function Contact({ profile }) {
 
         <div className="contact__card">
           <p className="contact__lead">
-            Vai tev ir kāds projekts galvā, vai vienkārši gribi man pateikt čau? Mans šeit ir mans ēpasts.
+            Vai tev ir kāds projekts galvā, vai vienkārši gribi man pateikt čau? Mans ēpasts ir šeit zemāk.
           </p>
 
           <a href={`mailto:${profile.email}`} className="btn btn--primary contact__email">

@@ -1,8 +1,7 @@
-import { ArrowIcon, MapPinIcon, DownloadIcon, SparkIcon } from './Icons'
+import { ArrowIcon, MapPinIcon, DownloadIcon } from './Icons'
+import profile_picture from '../assets/12866.png'
 
 export default function Hero({ profile }) {
-  const initials = profile.firstName[0] + profile.name.split(' ').pop()[0]
-
   return (
     <section className="hero" id="top">
       <div className="hero__inner container">
@@ -13,12 +12,9 @@ export default function Hero({ profile }) {
           </div>
 
           <h1 className="hero__title">
-            Hi, I'm <span className="hero__name">{profile.firstName}</span>
+            Čau, es esmu <span className="hero__name">{profile.firstName}</span>
             <span className="hero__dot">.</span>
           </h1>
-
-          <p className="hero__role">{profile.role}</p>
-          <p className="hero__tagline">{profile.tagline}</p>
 
           <div className="hero__meta">
             <span className="hero__location">
@@ -44,8 +40,8 @@ export default function Hero({ profile }) {
         <div className="hero__visual" aria-hidden="true">
           <div className="hero__card">
             <div className="hero__card-top">
-              <span className={`hero__initials hero__initials--${profile.firstName.toLowerCase()}`}>
-                {initials}
+              <span className="hero__portrait">
+                <img src={profile_picture} alt="Krists Kārlis Grundmanis" />
               </span>
             </div>
           </div>

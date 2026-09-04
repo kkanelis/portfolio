@@ -1,6 +1,6 @@
-export default function About({ profile }) {
-  const initials = profile.firstName[0] + profile.name.split(' ').pop()[0]
+import picture_ofself from '../assets/2660.webp'
 
+export default function About({ profile }) {
   return (
     <section className="section about" id="about">
       <div className="container">
@@ -13,7 +13,9 @@ export default function About({ profile }) {
         <div className="about__grid">
           <div className="about__visual">
             <div className="about__frame">
-              <div className="about__initials">{initials}</div>
+              <div className="about__initials">
+                <img src={picture_ofself} />
+              </div>
               <div className="about__tape"></div>
               <div className="about__sticker">ČĀĀĀU!</div>
             </div>
