@@ -1,5 +1,11 @@
 import { ExternalIcon, GithubIcon } from './Icons'
 
+function getLinks(value) {
+  return (Array.isArray(value) ? value : [value]).filter(
+    (link) => typeof link === 'string' && link.trim() && link !== '#',
+  )
+}
+
 export default function Projects({ projects }) {
   return (
     <section className="section projects" id="work">
@@ -18,7 +24,8 @@ export default function Projects({ projects }) {
                 <h3 className="project__title">{project.title}</h3>
               </div>
 
-              <div className="project__swatch" aria-hidden="true">
+              <div className={`project__swatch${project.image ? ' project__swatch--image' : ''}`} aria-hidden="true">
+                {project.image && <img className="project__swatch-image" src={project.image} alt="" />}
                 <span className="project__swatch-letter">{project.title[0]}</span>
               </div>
 
@@ -32,16 +39,32 @@ export default function Projects({ projects }) {
                 ))}
               </div>
 
-              <div className="project__links">
-                <a href={project.links.demo} className="project__link" aria-label={`${project.title} live demo`}>
-                  <ExternalIcon size={18} />
-                    Demo
-                </a>
-                <a href={project.links.code} className="project__link" aria-label={`${project.title} source code`}>
-                  <GithubIcon size={18} />
-                    Kods
-                </a>
-              </div>
+              {(getLinks(project.links?.demo).length > 0 || getLinks(project.links?.code).length > 0) && (
+                <div className="project__links">
+                  {getLinks(project.links?.demo).map((link, linkIndex) => (
+                    <a
+                      href={link}
+                      className="project__link"
+                      aria-label={`${project.title} live demo${linkIndex + 1}`}
+                      key={`demo-${linkIndex}-${link}`}
+                    >
+                      <ExternalIcon size={18} />
+                      Demo{getLinks(project.links?.demo).length > 1 ? ` ${linkIndex + 1}` : ''}
+                    </a>
+                  ))}
+                  {getLinks(project.links?.code).map((link, linkIndex) => (
+                    <a
+                      href={link}
+                      className="project__link"
+                      aria-label={`${project.title} source code${linkIndex + 1}`}
+                      key={`code-${linkIndex}-${link}`}
+                    >
+                      <GithubIcon size={18} />
+                      Kods{getLinks(project.links?.code).length > 1 ? ` ${linkIndex + 1}` : ''}
+                    </a>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>

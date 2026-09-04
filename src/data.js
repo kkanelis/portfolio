@@ -1,3 +1,9 @@
+import raduburzins_picture from './assets/Raduburzins.png'
+import flightradar_picture from './assets/FlightRadar.png'
+import mysterymeal_picture from './assets/Mysterymeal.png'
+import ithelp_picture from './assets/Ithelp.png'
+import drizbeigsies_picture from './assets/Drizbeigsies.png'
+
 export const profile = {
   name: 'Krists Kārlis Grundmanis',
   firstName: 'Krists Kārlis',
@@ -29,7 +35,9 @@ export const profile = {
         'Vietne kur radi var satikties digitāli un plānot savus pasākumus.',
       tech: ['React', 'Laravel', 'Tailwind CSS', 'REST API', 'Filament', 'Javascript', 'MySQL'],
       accent: '#474448',
-      links: {},
+      image: raduburzins_picture,
+      links: { code: ['https://github.com/kkanelis/raduBurzins_front/tree/main',
+                    'https://github.com/kkanelis/raduBurzins_back']},
     },
     {
       title: 'Mystery Meal',
@@ -37,7 +45,8 @@ export const profile = {
         'Atrodi sev vakariņas, borkastis, pusdienas no tā kas tev ir ledusskapī.',
       tech: ['Laravel', 'Tailwind CSS'],
       accent: '#725ed3',
-      links: { demo: '#', code: '#' },
+      image: mysterymeal_picture,
+      links: { demo: '#', code: 'https://github.com/kkanelis/mysterymeal2' },
     },
     {
       title: 'Flight Radar',
@@ -45,7 +54,8 @@ export const profile = {
         'Apsakti kādas lidmašīnas tev lido virs galvas.',
       tech: ['Laravel', 'REST API'],
       accent: '#7bc950',
-      links: { demo: '#', code: '#' },
+      image: flightradar_picture,
+      links: { demo: '#', code: 'https://github.com/kkanelis/FlightRadar' },
     },
     {
       title: 'Drīz beigsies!',
@@ -53,7 +63,8 @@ export const profile = {
         'Liec sev atcerēties kad tev kaut kas beigsies, piemēram netflixa abonoments.',
       tech: ['Laravel', 'MySQL'],
       accent: '#ff8c42',
-      links: { demo: '#', code: '#' },
+      image: drizbeigsies_picture,
+      links: { demo: '#', code: 'https://github.com/kkanelis/krievins_drizbeigsies' },
     },
     {
       title: 'IT Help',
@@ -61,15 +72,8 @@ export const profile = {
         'Jautā palīdzību tehnisko kādā skolā vai uzņēmumā, lai tev varētu palīdzēt kāds IT speciālists.',
       tech: ['React', 'Laravel', 'MySQL'],
       accent: '#4d9de0',
-      links: { demo: '#', code: '#' },
-    },
-    {
-      title: 'Shipmate',
-      description:
-        'A CLI and dashboard for previewing deployments. Speeds up the review loop for 200+ engineering teams.',
-      tech: ['Go', 'Docker', 'AWS'],
-      accent: '#e8488a',
-      links: { demo: '#', code: '#' },
+      image: ithelp_picture,
+      links: { demo: '#', code: 'https://github.com/kkanelis/iesmins_ithelp' },
     },
   ],
 }
