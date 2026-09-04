@@ -1,5 +1,5 @@
 import raduburzins_picture from './assets/Raduburzins.png'
-import flightradar_picture from './assets/FlightRadar.png'
+import flightradar_picture from './assets/Flightradar.png'
 import mysterymeal_picture from './assets/Mysterymeal.png'
 import ithelp_picture from './assets/Ithelp.png'
 import drizbeigsies_picture from './assets/Drizbeigsies.png'
